@@ -1,18 +1,19 @@
 package com.example.sttapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
+import android.Manifest;
 import android.content.Intent;
 import android.os.Build;
+import android.os.Bundle;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
-import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.Manifest;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
 import java.util.ArrayList;
 
 public class SttActivity extends AppCompatActivity {
@@ -110,6 +111,7 @@ public class SttActivity extends AppCompatActivity {
 
             for(int i = 0; i < matches.size() ; i++){
                 textView.setText(matches.get(i));
+//
             }
         }
 
